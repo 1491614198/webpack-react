@@ -1,0 +1,28 @@
+body {
+    padding: 20px;
+}
+
+.box{
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+    background-color: lime;
+}
+
+.example-enter {
+    opacity: 0.01;
+    transition: opacity .2s ease-in;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+}
+
+.example-leave {
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+}
