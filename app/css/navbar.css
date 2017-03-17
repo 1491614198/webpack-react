@@ -1,0 +1,25 @@
+.navbar_back{
+    position:relative;
+    width:100%;
+    height:40px;
+    background-color:deepskyblue;
+    color:white;
+}
+.navbar_one{
+    float:left;
+    margin-left:400px;
+    height:100%;
+    border:3px solid white;
+}
+.navbar_two{
+    float:left;
+    margin-left:100px;
+    height:100%;
+    border:3px solid white;
+}
+.navbar_three{
+    float:left;
+    margin-left:100px;
+    height:100%;
+    border:3px solid white;
+}
