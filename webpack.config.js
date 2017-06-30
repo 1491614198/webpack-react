@@ -12,7 +12,7 @@ module.exports ={
     output:{
         path:path.resolve(__dirname,'./build'),
         filename:'bundle.js',
-        publicPath:'http://localhost:8080/build/'
+        publicPath:'http://localhost:8080'
     },
     module:{
         loaders:[
