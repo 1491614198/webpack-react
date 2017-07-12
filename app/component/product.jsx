@@ -3,6 +3,7 @@ import React,{Component} from "react";
 import NB from '../component/dull'
 import "../css/ReactTrans.css";
 import Nav from '../component/nav'
+import Todo from '../component/make'
 
 
 class Page1 extends React.Component{
@@ -41,6 +42,8 @@ class Product extends React.Component{
                 <Nav dao={dao}/>
                 <Page1 data={data} list={list}/>
                 don't get me {data.name}
+                <Todo name="仔仔" age={3} tel="13390290292"/>
+
                 {/*<Link to='/build'>lalalalallalal</Link>*/}
             </div>
         )
