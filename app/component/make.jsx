@@ -16,15 +16,21 @@ class Todo extends Component{
         return response;
       }}).then().catch((err)=>{console.log('错误为'+err)})
   }
+  add(){
+    this.setState({
+      age:this.state.age+'1'
+    })
+  }
   render(){
     return(
       <div>
         <h1>Hello {this.props.name}</h1>
         <h2>Hi {this.props.age}</h2>
         <h3>Bye {this.props.tel}</h3>
-        <h6>hehe {this.state.number}</h6>
-        <span>lalal {this.state.hot}</span>
+        <h6>hehe {this.state.name}</h6>
+        <span>lalal {this.state.age}</span>
         <button onClick={this.submit.bind(this)}>点击</button>
+        <button onClick={this.add.bind(this)}>增加</button>
       </div>
     )
   }
