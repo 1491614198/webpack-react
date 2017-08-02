@@ -6,12 +6,12 @@ class Todo extends Component{
   constructor(props){
     super(props)
     this.state={
-      name:'zhou',
-      age:'888'
+      name:'endendend',
+      age:'999'
     }
   }
   submit(){
-    fetch('http://localhost:9090/api/demo',{method:'post',headers:{'Accept': 'application/json','Content-Type': 'application/x-www-form-urlencoded'},body:'name='+this.state.name+'&age='+this.state.age}).then(function(response){
+    fetch('http://localhost:9090/api/demo',{method:'post',headers:{'Accept': 'application/json','Content-Type': 'application/x-www-form-urlencoded'},body:'id='+10+'&name='+this.state.name+'&url='+'www.newband.com'+'&country='+'shanghai'}).then(function(response){
       if(response.status==200){
         return response;
       }}).then().catch((err)=>{console.log('错误为'+err)})
