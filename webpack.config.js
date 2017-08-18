@@ -16,13 +16,18 @@ module.exports ={
     },
     module:{
         loaders:[
-            {test:/\.css$/,loaders:"style-loader!css-loader"},
-            {
-                test:/\.(js|jsx)$/,
-                exclude:/node_modules/,
-                loaders:["babel-loader"],
+          {test:/\.css$/,loaders:"style-loader!css-loader"},
+          {test:/\.less$/,loaders:"style-loader!css-loader!less-loader"},
+          {
+            test:/\.(js|jsx)$/,
+            exclude:/node_modules/,
+            loaders:["babel-loader"],
+          },
+          {
+            test:/\.(png|jpg)/,
+            loaders:"url-loader?limit=8192",
 
-            }
+          }
         ]
     },
     resolve:{
